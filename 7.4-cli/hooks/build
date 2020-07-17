@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker build -t $IMAGE_NAME --build-arg MAGENTO2_PUB=$MAGENTO2_PUB MAGENTO2_PRI=$MAGENTO2_PRI .
