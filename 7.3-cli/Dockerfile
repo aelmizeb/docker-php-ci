@@ -21,7 +21,7 @@ RUN echo "MAGENTO2_PRI : $MAGENTO2_PRI"
 RUN \
     apt-get update \
     && apt-get install -y \
-        libfreetype6-dev libicu-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev libxml2-utils libxslt-dev \
+        libfreetype6-dev libicu-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev libxml2-utils libxslt-dev  libzip-dev \
     && apt-get clean autoclean autoremove -y \
     && rm -rf /var/lib/apt/lists/*
 
